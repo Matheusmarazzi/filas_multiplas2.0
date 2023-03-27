@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.container-form{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 1;
+    padding: 5%;
+}
+
+.input{
+    padding: 5px;
+    width: 25%;
+    margin: 5px;
+}
+
+.container{
+    display: flex;
+    padding: 5%;
+    flex-direction: column;
+}
+
+#execucao{
+    display: flex;
+    margin-left: -0.15vh;
+    margin-bottom: 100px;
+}
+#tempo{
+    display: flex;
+    margin-right: 15px;
+    
+}
+.exe{
+    height: 5%;
+    background-color: rgb(45, 255, 129);
+    padding: 15px;
+    margin: 5px;
+    width: 50px;
+   
+}
+.tem{
+    height: 5%;
+    background-color: rgb(101, 183, 255);
+    padding: 15px;
+    margin: 5px;
+    width: 50px;
+}
+#exe{
+    height: 5%;
+    background-color: rgb(45, 255, 129);
+    padding: 15px;
+    margin: 5px;
+    width: 100px;
+}
+#tem{
+    height: 5%;
+    background-color: rgb(101, 183, 255);
+    padding: 15px;
+    margin: 5px;
+    width: 100px;
+    
+}
+#prior{
+    padding: 1%;
+}
+
+button{
+    padding: 1%;
+    border: 0px;
+    margin: 5px;
+    background-color: rgb(42, 116, 181);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: white;
+    color: rgb(31, 75, 163);
+    transition: all 0.3s ease-in-out;
+}

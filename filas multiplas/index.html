@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Filas multiplas</title>
+	<script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+
+	
+
+
+</head>
+<body>
+	<div class="container-form">
+		<form class="formulario">
+			<h5>Nome do processo</h5>
+			<input class="input" id="nom" type="text" maxlength="1" name="nome"/>
+			
+			<h5>Tempo de chegada</h5>
+			<input class="input" id="T_che" type="number" maxlength="1" name="T_chegada"/>
+	
+			<h5>Tempo de execução</h5>
+			<input class="input" id="T_ex" type="number" maxlength="1" name="T_exe"/>
+			
+			<h5>Prioridade</h5>
+			<select id="prior" name="pri" size="0">
+				<option value="0">fila 0</option>
+				<option value="1">fila 1</option>
+			</select>
+	
+			<button type="button" onclick="adc()">Cadastrar</button>
+	
+			<button type="button" onclick="rodar()">Rodar</button>
+		</form>
+	</div>
+
+	<div class="container">
+		<div id="tempo">
+			<ul id="tem">tempo</ul>
+		</div>
+		<div id="execucao">
+			<ul id="exe">Processo</ul>
+		</div>
+	</div>
+
+
+
+	<script src="app.js"></script>
+	<link rel="stylesheet" href="estilo.css">
+</body>
+</html>

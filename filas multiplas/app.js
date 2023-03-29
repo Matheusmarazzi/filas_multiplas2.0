@@ -6,6 +6,7 @@ processo[2] = {id: 2, nome: 'c',T_entrada: '5', T_execucao:'6', prioridade:'0'};
 processo[3] = {id: 3, nome: 'd',T_entrada: '6', T_execucao:'5', prioridade:'1'};
 
 
+var id = 0;
 var indice = 0;
 var pri = 0;
 var fila1 = [];
@@ -14,18 +15,23 @@ var fila0 = []
 var tem_max=25;
 var tem_atual= 0;
 //------------------------------------------declaração de variaveis-------------------------
-while(tem_max > tem_atual){
-    for(i=0; i<processo.length;i++){
-        verificar();
+
+
+
+function rodar(){
+    while(tem_max > tem_atual){
+        for(i=0; i<processo.length;i++){
+            verificar();
+        }
+        tem_atual++
     }
-    tem_atual++
-}
-tem_atual=0;
-for(i=0; i<10; i++){
-    listar0();
-    listar1();
-    tem_atual++
-    
+    tem_atual=0;
+    for(i=0; i<10; i++){
+        listar0();
+        listar1();
+        tem_atual++
+        
+    }
 }
 
 
@@ -71,7 +77,18 @@ function listar0(){
     });
 }
 
+function adicionar(){
+let nome, t_entrada, t_execucao, prio;
+    nome = $("#nom").val();
+    t_entrada = $("#T_che").val();
+    t_execucao = $("#T_ex").val();
+    prio = $("#prior").val();
+    processo.push({id: id, nome: nome, T_entrada: t_entrada, T_execucao: t_execucao, prioridade:prio});
+    id++;
+    console.log(processo);
     
+    
+}    
         
         
 
